@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pay-item.component.scss']
 })
 export class PayItemComponent implements OnInit {
+  public pageNumber: number;
 
-  constructor() { }
+  constructor() {
+    this.pageNumber = 1;
+  }
 
   ngOnInit() {
   }
