@@ -1,0 +1,32 @@
+$mdc-theme-primary: #05142D;
+$mdc-theme--primary-bg: #05142D;
+$mdc-theme--on-primary: #ffffff;
+
+$mdc-theme-secondary: #42B9FF;
+$mdc-theme--secondary-bg: #2DB9C8;
+$mdc-theme--on-secondary: #ffffff;
+
+$mdc-theme--surface: #fff;
+$mdc-theme--on-surface: #fff;
+
+$mdc-theme-background: #fff;
+
+@import "@material/button/mdc-button";
+
+:host {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.app-inner {
+    background: linear-gradient(45deg, #172359 0%,#051437 47%,#05141e 100%);
+    position: relative;
+}
+
+button.mdc-button {
+    @include mdc-button-outline-color($mdc-theme-secondary);
+    @include mdc-button-ink-color($mdc-theme--on-secondary);
+    box-shadow: 0 0 2px $mdc-theme-secondary;
+}

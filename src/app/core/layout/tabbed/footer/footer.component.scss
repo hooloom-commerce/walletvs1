@@ -1,0 +1,29 @@
+$mdc-theme-primary: #051423;
+$mdc-theme--primary-bg: #05142D;
+$mdc-theme--on-primary: #ffffff;
+
+$mdc-theme-secondary: #2DB9C8;
+$mdc-theme--secondary-bg: #2DB9C8;
+$mdc-theme--on-secondary: #ffffff;
+
+$mdc-theme--surface: #fff;
+$mdc-theme--on-surface: #fff;
+
+$mdc-theme-background: #fff;
+
+@import "@material/button/mdc-button";
+
+section.app-tabs {
+    background-color: $mdc-theme-primary;
+}
+
+section.app-tabs button.mdc-button {
+    @include mdc-button-ink-color(#ffffff);
+}
+
+section.app-tabs button.mdc-button .mdc-button__icon {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    margin-right: 0px;
+}

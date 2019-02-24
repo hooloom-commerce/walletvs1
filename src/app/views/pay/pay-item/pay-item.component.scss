@@ -1,0 +1,58 @@
+$mdc-theme-primary: #05142D;
+$mdc-theme--primary-bg: #05142D;
+$mdc-theme--on-primary: #ffffff;
+
+$mdc-theme-secondary: #42B9FF;
+$mdc-theme--secondary-bg: #2DB9C8;
+$mdc-theme--on-secondary: #ffffff;
+
+$mdc-theme--surface: rgba(255, 255, 255, 0.7);
+$mdc-theme--on-surface: #fff;
+
+$mdc-theme-background: #fff;
+
+@import "@material/card/mdc-card";
+@import "@material/list/mdc-list";
+
+:host {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mdc-card {
+    width: 100%;
+    @include mdc-card-fill-color($mdc-theme--surface);
+}
+
+.mdc-list {
+    padding: 0;
+}
+
+.mdc-list-item {
+    height: 55px;
+}
+
+.mdc-list-item:not(:last-child) {
+    border-bottom: 1px solid $mdc-theme-primary;
+}
+
+h3 {
+    font-weight: 500;
+    margin-top: 0px;
+}

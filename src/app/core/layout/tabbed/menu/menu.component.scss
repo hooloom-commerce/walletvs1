@@ -1,0 +1,15 @@
+$mdc-theme-primary: #05142D;
+$mdc-theme--primary-bg: #05142D;
+$mdc-theme--on-primary: #ffffff;
+
+$mdc-theme-secondary: #2DB9C8;
+$mdc-theme--secondary-bg: #2DB9C8;
+$mdc-theme--on-secondary: #ffffff;
+
+$mdc-theme--surface: #fff;
+$mdc-theme--on-surface: #fff;
+
+$mdc-theme-background: #fff;
+
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";

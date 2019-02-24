@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Caros', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    contain: layout size style;
+}
+
+.container main.app-inner {
+    background: #ffffff;
+    position: relative;
+    flex: 1;
+    contain: layout size style;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container section.app-tabs {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    box-sizing: content-box !important;
+    contain: strict;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.container section.app-tabs > * {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+// Forms
+
+form {
+    width: 100%;
+}
+
+form .form-input.mdc-text-field:not(.mdc-text-field--disabled) {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+form .form-button.mdc-button.mdc-button--outlined {
+    width: 100%;
+    height: auto !important;
+    padding: 15px;
+    border-radius: 30px;
+}
+

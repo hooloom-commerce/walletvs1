@@ -1,0 +1,14 @@
+
+<app-menu></app-menu>
+<main [@fadeAnimation]="prepareRoute(outlet)" class="app-inner mdc-drawer-app-content">
+  <app-header></app-header>
+
+  <!-- <button class="mdc-button mdc-button--outlined">
+    <span class="mdc-button__label">Button</span>
+  </button> -->
+
+
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>
+
+<app-footer></app-footer>

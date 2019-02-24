@@ -1,0 +1,76 @@
+$mdc-theme-primary: #fff;
+$mdc-theme--primary-bg: #9c27b0;
+$mdc-theme--on-primary: #9c27b0;
+
+$mdc-theme-secondary: #76ff03;
+$mdc-theme--secondary-bg: #76ff03;
+$mdc-theme--on-secondary: #9c27b0;
+
+$mdc-theme--surface: #fff;
+$mdc-theme--on-surface: #fff;
+
+$mdc-theme-background: #fff;
+
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+:host {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background-color: #35245b;
+    background: url('/assets/images/hoopay_bg.png') no-repeat;
+    background-size: cover;
+    background-position: top right;
+    color: #ffffff;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img#main-logo {
+    width: 160px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form .form-input.mdc-text-field:not(.mdc-text-field--focused) {
+    @include mdc-text-field-line-ripple-color(#ffffff);
+    @include mdc-text-field-ink-color(#ffffff);
+    @include mdc-text-field-label-color(#ffffff);
+    @include mdc-text-field-bottom-line-color(rgba(255, 255, 255, 0.6));
+}
+
+form .form-input.mdc-text-field.mdc-text-field--focused {
+    @include mdc-text-field-line-ripple-color(#ffffff);
+    @include mdc-text-field-ink-color(#ffffff);
+    @include mdc-text-field-label-color(rgba(255, 255, 255, 0.4));
+    @include mdc-text-field-bottom-line-color(rgba(255, 255, 255, 0.6));
+}
+
+form .form-input.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__icon {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+form .form-button {
+    width: 75%;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    @include mdc-button-outline-color(#ffffff);
+    @include mdc-button-ink-color(#ffffff);
+}

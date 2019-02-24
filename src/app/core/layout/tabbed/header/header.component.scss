@@ -1,0 +1,28 @@
+$mdc-theme-primary: #051423;
+$mdc-theme--primary-bg: #05142D;
+$mdc-theme--on-primary: #ffffff;
+
+$mdc-theme-secondary: #2DB9C8;
+$mdc-theme--secondary-bg: #2DB9C8;
+$mdc-theme--on-secondary: #ffffff;
+
+$mdc-theme--surface: #fff;
+$mdc-theme--on-surface: #fff;
+
+$mdc-theme-background: #fff;
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+:host {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    flex: 1;
+    flex-direction: column;
+}
+
+.mdc-top-app-bar__title {
+    font-family: 'Caros', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
